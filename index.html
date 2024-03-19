@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge G6 Alura</title>
+    <link rel="shortcut icon" href="/Imagenes/Alura_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <header>
+      <img class="Logo" src="/Imagenes/Logo.png" alt="">
+    </header>
+    <div class="container">
+
+      <div class ="encriptar">
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Ingresa el texto aqui"
+        ></textarea>
+
+        <div class="terminos">
+          <p> 🛈 Solo letras minúsculas y sin acentos.</p>
+        </div>
+
+        <div class="botones">
+          <button class="boton-encriptar" type="button" onclick="encriptar()">
+            Encriptar
+          </button>
+
+          <input
+            type="button"
+            class="boton-desencriptar"
+            value="Desencriptar"
+            onclick="desencriptar()"
+          />
+        </div>
+      </div>
+
+      <div class="encriptado">
+        <img src="./Imagenes/muñeco.png" alt="" id="muñeco" />
+
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+          <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+          <p id="parrafo">
+            Ingrese el texto que desea encriptar o desencriptar
+          </p>
+          <!--
+            <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="30"
+            rows="10"
+            class="mensaje"
+          ></textarea> -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
